@@ -1,0 +1,236 @@
+/* MY themes */
+/* =================================
+   1. LIGHT THEME - BRAND
+================================= */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --page-bg: #F0E9DA;
+  --card-bg: #FFFFFF;
+  --secondary-bg: #E9E0D0;
+
+  --primary: #E91519;
+  --primary-hover: #C91015;
+
+  --text: #514A43;
+  --muted: #81766A;
+  --border: #DED5C6;
+
+  --status-bg: #E2F2E6;
+  --status-text: #27734A;
+}
+
+
+/* =================================
+   2. DARK THEME
+================================= */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --page-bg: #211F1D;
+  --card-bg: #302C29;
+  --secondary-bg: #403A35;
+
+  --primary: #FF6868;
+  --primary-hover: #FF8585;
+
+  --text: #F5EEE5;
+  --muted: #BDB0A2;
+  --border: #554B43;
+
+  --status-bg: #244735;
+  --status-text: #9AE6B4;
+}
+
+
+/* =================================
+   3. SOOTHING THEME
+================================= */
+
+:root[data-theme="soothing"] {
+  color-scheme: light;
+
+  --page-bg: #E9EDE5;
+  --card-bg: #F6F7F1;
+  --secondary-bg: #DCE4D9;
+
+  --primary: #718B79;
+  --primary-hover: #58715F;
+
+  --text: #37483E;
+  --muted: #68786C;
+  --border: #CFD9CE;
+
+  --status-bg: #DCEBDD;
+  --status-text: #376A4B;
+}
+
+
+/* =================================
+   4. ACCESSIBLE THEME
+================================= */
+
+:root[data-theme="accessible"] {
+  color-scheme: light;
+
+  --page-bg: #F4F6F8;
+  --card-bg: #FFFFFF;
+  --secondary-bg: #E6EDF3;
+
+  --primary: #005A9C;
+  --primary-hover: #003F70;
+
+  --text: #142D46;
+  --muted: #46596C;
+  --border: #8999A8;
+
+  --status-bg: #D9EFE8;
+  --status-text: #006B55;
+}
+
+
+/* =================================
+   5. COMMON STYLES
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Arial, sans-serif;
+
+  background: var(--page-bg);
+  color: var(--text);
+
+  transition: background 0.2s, color 0.2s;
+}
+
+
+/* =================================
+   6. DEMO CARD
+================================= */
+
+.demo-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.theme-card {
+  width: 100%;
+  max-width: 380px;
+
+  padding: 28px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+h2 {
+  margin: 0;
+
+  color: var(--primary);
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: var(--primary);
+}
+
+.divider {
+  height: 1px;
+  margin: 22px 0;
+
+  background: var(--border);
+}
+
+.description {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.order-info span {
+  color: var(--muted);
+}
+
+.order-info strong {
+  color: var(--text);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 20px;
+  padding: 8px 12px;
+
+  border-radius: 20px;
+
+  background: var(--status-bg);
+  color: var(--status-text);
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: var(--status-text);
+}
+
+.primary-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: var(--primary);
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: var(--primary-hover);
+}
+
+.footer-text {
+  margin: 22px 0 0;
+
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
