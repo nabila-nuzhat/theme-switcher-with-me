@@ -18,7 +18,7 @@ function App() {
   const [theme, setTheme] = useState('light');
   function toggleTheme(){
     setTheme(
-      (prev) => prev == 'light' ? 'dark' : 'light'
+      (prev) => prev === 'light' ? 'dark' : 'light'
     )
   }
   // toggle theme test :2 
@@ -39,9 +39,10 @@ function App() {
 <h1>Hello, the world is {theme} </h1>
   <button onClick={toggleTheme}> Shimmer or shine </button>
 <br></br>
+<br></br>
     {/* button toggle test 2 */}
-    <h2>Ami chai</h2>
- <button type="button" onClick={()=>{setThemeBangla((prev2)=>prev2=='roddur' ? 'akash meghla' : 'roddur')}}>  {themeBangla} </button>
+ <button type="button" onClick={()=>{setThemeBangla((prev2)=>prev2==='roddur' ? 'akash meghla' : 'roddur')}}> Ami chai  </button>
+    <h2>{themeBangla}</h2>
     </>
   )
 }
