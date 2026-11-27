@@ -22,10 +22,12 @@ const ThemeContext = createContext("light");
 
 function ThemeProvider({children}){
   const [theme, setTheme] = useState("light");
-
-  <ThemeContext.Provider value={{theme, setTheme}}>
+return(
+<ThemeContext.Provider value={{theme, setTheme}}>
     {children}
   </ThemeContext.Provider>
+)
+  
 }
 
 export default ThemeContext;
