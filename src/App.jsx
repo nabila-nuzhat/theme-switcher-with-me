@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { ThemeProvider } from './ThemeContext';
 import ThemeDisplay from './components/ThemeDisplay';
+import ThemeButton from './components/ThemeButton';
 
 function App() {
 /**  ==========================================================
@@ -51,6 +52,7 @@ function App() {
   ======================================================  */}
   <ThemeProvider>
     <ThemeDisplay />
+    <ThemeButton />
   </ThemeProvider>
   
     </>
