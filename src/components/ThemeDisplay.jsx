@@ -1,3 +1,8 @@
+/**  ===================================================
+ * theme practise stage 5 : Read Context from another component
+  ====================================================== */
+
+
 import React, { useContext } from 'react'
 import ThemeContext from '../ThemeContext'
 
