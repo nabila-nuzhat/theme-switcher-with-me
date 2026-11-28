@@ -1,6 +1,9 @@
 import React, { useContext } from 'react'
 import ThemeContext from '../ThemeContext'
 
+/** =================================================================
+ * theme practise stage 6 : Update Context from a different component
+  ================================================================= */
 function ThemeButton() {
     const { theme, setTheme } = useContext(ThemeContext);
 

@@ -18,7 +18,7 @@ import { createContext, useState } from "react";
 
 // // both are ok. professionally used null for practical use
 // const ThemeContext = createContext(null);
-const ThemeContext = createContext("light");
+const ThemeContext = createContext("light"); // createContext is placed outside ThemeProvider so the context object is created only once and can be exported for other components to consume.
 
 function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("light");
